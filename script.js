@@ -93,10 +93,9 @@ function checker(event){
         let temp = document.querySelector(`.ans_${event}`);
         temp.classList.add("wrong");
         for(let i=0;i<questions[counter].ansdis.length;i++){
-            if(i != right){
                 let temp = document.getElementById(`ans_${i}`);
                 temp.disabled = true;
-            }
+            
         }
         let temp2 = document.querySelector(`.ans_${right}`);
         temp2.classList.add("right");
